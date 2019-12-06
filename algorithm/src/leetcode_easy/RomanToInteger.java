@@ -66,20 +66,32 @@ public class RomanToInteger {
 		map.put('D', 500);
 		map.put('M', 1000);
 		
-		ArrayList<Integer> list = new ArrayList<Integer>();
 		
-		for(int i=0; i<s.length(); i++) {
-			list.add(map.get(s.charAt(i)));
-		}
+//		ArrayList<Integer> list = new ArrayList<Integer>();
+//		
+//		for(int i=0; i<s.length(); i++) {
+//			list.add(map.get(s.charAt(i)));
+//		}
+//		
+//		int sum = 0;
+//		for(int j=0; j<list.size(); j++) {
+//			
+//			sum += list.get(j);
+//			
+//			if(j > 0 && list.get(j-1) < list.get(j)) {
+//				sum -= list.get(j-1)*2;
+//			}
+//		}
 		
 		int sum = 0;
-		for(int j=0; j<list.size(); j++) {
+		for(int i=0; i<s.length(); i++) {
 			
-			sum += list.get(j);
+			sum += map.get(s.charAt(i));
 			
-			if(j > 0 && list.get(j-1) < list.get(j)) {
-				sum -= list.get(j-1)*2;
+			if(i>0 && map.get(s.charAt(i-1)) < map.get(s.charAt(i))) {
+				sum -= map.get(s.charAt(i-1))*2;
 			}
+			
 		}
 		
 		return sum;
@@ -88,7 +100,7 @@ public class RomanToInteger {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(romanToInt("MCMXCIV"));
+		System.out.println(romanToInt("III"));
 	}
 
 }

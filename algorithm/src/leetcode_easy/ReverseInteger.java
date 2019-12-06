@@ -1,4 +1,4 @@
-package exercise1203;
+package leetcode_easy;
 
 //Given a 32-bit signed integer, reverse digits of an integer.
 //Example 1)

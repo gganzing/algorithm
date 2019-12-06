@@ -1,4 +1,4 @@
-package exercise1203;
+package leetcode_easy;
 import java.util.Arrays;
 
 //Two Sum ///
