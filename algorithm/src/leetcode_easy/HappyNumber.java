@@ -15,7 +15,8 @@ import java.util.HashSet;
 //	8^2 + 2^2 = 68
 //	6^2 + 8^2 = 100
 //	1^2 + 0^2 + 0^2 = 1
-//	*1을 반환하는 happy number가 아닐 경우, 해당 연산이 계속 무한 루프를 돌게됨 => 이전에 연산되었던 값이 연산 중 또 나왔다면, 무한루프행[false 탈출지점!]
+//	*1을 반환하는 happy number가 아닐 경우, 해당 연산이 계속 무한 루프를 돌게됨 
+//	=> 이전에 연산되었던 값이 연산 중 또 나왔다면, 무한루프행[false 탈출지점!]
 
 public class HappyNumber {
 	
@@ -43,7 +44,7 @@ public class HappyNumber {
 		return false;
 			
 		
-//		Time Limit Exceeded
+//		Time Limit Exceeded/ 정답이 아니면 탈출 불가능한 코드..
 //		String num = n+"";
 //		try {
 //			while(n > 1) {
