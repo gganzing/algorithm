@@ -1,6 +1,9 @@
 package additional_study;
 
-// 자료구조 공부 - linked list
+// 자료구조 공부 - linked list ; 단순 연결 리스트
+// cf) 양방향 연결 리스트 [prev] 
+// 장점 : 양방향 이동가능/ 특정인덱스의 검색시간 단축, 앞으로도 이동가능, 앞의 값 알기 가능
+// 단점 : 메모리 더 많이 사용, 좀 더 복잡
 
 class LinkedList{
 	
