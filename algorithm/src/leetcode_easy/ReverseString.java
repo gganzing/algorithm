@@ -22,6 +22,7 @@ public class ReverseString {
 			s[j--] = temp;
 		}
         
+//		효율 좋지 않음, 다시 생각하기
 //		String str = "";
 //		for(char c : s) {
 //			str += c;
