@@ -19,34 +19,34 @@ public class ValidPerfectSquare {
 //		...
 		
 		
-//		int i = 1;
-//		while (num > 0) {
-//			num -= i;
-//			i += 2;
-//		}
-//		return num == 0;	
+		int i = 1;
+		while (num > 0) {
+			num -= i;
+			i += 2;
+		}
+		return num == 0;	
 		
 		
 //		다른 문풀
-		// 제곱을 이루기 위한 수의 최소 범위, 최대 범위 
-		long l = 1, r = num;
-        while(l < r){
-		  // 답을 내기 위한 최소 범위 값이 최대 범위를 넘게 되면, 범위 안에서 답이 나오지 않았다는 의미이므로 루프탈출
-            long mid = (l + r) / 2; 
-            // l < mid < r => 범위 사이의 중간 값을 알기 위함
-            if(mid * mid == num){
-                return true;
-		
-            }else if(mid * mid > num){
-				// 중간 값의 제곱 값이 num보다 크면, 제곱을 이루기 위한 수의 최대 범위를 줄여줌
-                r = mid - 1;
-		
-            }else{
-				// 중간 값의 제곱 값이 num보다 작으면, 제곱을 이루기 위한 수의 최소 범위를 키워줌
-                l = mid + 1;
-            }
-        }
-        return l * l == num;
+//		// 제곱을 이루기 위한 수의 최소 범위, 최대 범위 
+//		long l = 1, r = num;
+//        while(l < r){
+//		  // 답을 내기 위한 최소 범위 값이 최대 범위를 넘게 되면, 범위 안에서 답이 나오지 않았다는 의미이므로 루프탈출
+//            long mid = (l + r) / 2; 
+//            // l < mid < r => 범위 사이의 중간 값을 알기 위함
+//            if(mid * mid == num){
+//                return true;
+//		
+//            }else if(mid * mid > num){
+//				// 중간 값의 제곱 값이 num보다 크면, 제곱을 이루기 위한 수의 최대 범위를 줄여줌
+//                r = mid - 1;
+//		
+//            }else{
+//				// 중간 값의 제곱 값이 num보다 작으면, 제곱을 이루기 위한 수의 최소 범위를 키워줌
+//                l = mid + 1;
+//            }
+//        }
+//        return l * l == num;
 		
 		
 //		Time Limit Exceeded
