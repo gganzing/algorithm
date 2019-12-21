@@ -31,7 +31,7 @@ public class ThirdMaximumNumber {
 				}
 				
 				if(cnt == 2) {
-					max3 = nums[i-1];
+					return nums[i-1];
 				}
 			}
 		}
