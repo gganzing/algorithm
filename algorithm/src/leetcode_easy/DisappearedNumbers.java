@@ -53,7 +53,14 @@ public class DisappearedNumbers {
 //			}
 //		}
 //		return list;
-//		
+		
+//		위 코드랑 같은 논리인데, 구분하는 방법을 +length값으로 한 문풀
+//		List<Integer> res = new ArrayList<>();
+//        int n = nums.length;
+//        for (int i = 0; i < nums.length; i ++) nums[(nums[i]-1) % n] += n;
+//        for (int i = 0; i < nums.length; i ++) if (nums[i] <= n) res.add(i+1);
+//        return res;
+		
     }
 	
 	public static void main(String[] args) {
