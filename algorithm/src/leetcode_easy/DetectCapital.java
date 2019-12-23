@@ -21,15 +21,16 @@ public class DetectCapital {
 		
 		boolean first = false;
 		if(word.charAt(0) >= 'a' && word.charAt(0) <= 'z') {
-		
+			// 첫 번째 글자가 소문자
 			first = true;
 		}
 		
 		boolean check = true;
+		// 두 번째 글자부터 끝까지 모두 같은 글자인지 판별
 		if(word.charAt(1) >= 'A' && word.charAt(1) <= 'Z') {
 			
 			if(first) {
-			
+				// 첫 번째가 소문자인데 두 번째가 대문자가 나온 경우
 				return false;
 			}
 			
@@ -63,7 +64,9 @@ public class DetectCapital {
 		
 		
 //		다른 문풀2
+//		내 코드보다 잘 정리된 코드
 //		 int cnt = 0;
+//		// 대문자의 개수만 판별
 //	     for(char c: word.toCharArray()) {
 //	    	 // 대문자[65~90], 소문자[97~122]
 //	    	 // 아래 조건이 성립할 경우, 대문자라는 의미!
