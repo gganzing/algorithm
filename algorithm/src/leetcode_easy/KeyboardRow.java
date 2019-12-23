@@ -25,40 +25,28 @@ public class KeyboardRow {
 //	char arr1[] = {'q','w','e','r','t','y','u','i','o','p'};
 //	char arr2[] = {'a','s','d','f','g','h','j','k','l'};
 //	char arr3[] = {'z','x','c','v','b','n','m'};
+	String s1 = "qwertyuiop";
+	String s2 = "asdfghjkl";
+	String s3 = "zxcvbnm";
 		
 	public KeyboardRow() {
 		
 		line1 = new HashSet<Character>();
-		line1.add('q');
-		line1.add('w');
-		line1.add('e');
-		line1.add('r');
-		line1.add('t');
-		line1.add('y');
-		line1.add('u');
-		line1.add('i');
-		line1.add('o');
-		line1.add('p');
+		for(int i=0; i<s1.length(); i++) {
+			line1.add(s1.charAt(i));
+		}
 		
 		line2 = new HashSet<Character>();
-		line2.add('a');
-		line2.add('s');
-		line2.add('d');
-		line2.add('f');
-		line2.add('g');
-		line2.add('h');
-		line2.add('j');
-		line2.add('k');
-		line2.add('l');
+		line2 = new HashSet<Character>();
+		for(int j=0; j<s2.length(); j++) {
+			line2.add(s2.charAt(j));
+		}
 		
 		line3 = new HashSet<Character>();
-		line3.add('z');
-		line3.add('x');
-		line3.add('c');
-		line3.add('v');
-		line3.add('b');
-		line3.add('n');
-		line3.add('m');
+		line3 = new HashSet<Character>();
+		for(int k=0; k<s3.length(); k++) {
+			line3.add(s3.charAt(k));
+		}
 		
 	}
 	
