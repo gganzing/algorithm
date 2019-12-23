@@ -16,13 +16,13 @@ import java.util.HashSet;
 //	The given array's numbers won't have any order.
 
 public class SetMismatch {
-
+	
 	public static int[] findErrorNums(int[] nums) {
 		
 		int re[] = new int[2];
 		
 		for(int i=0; i<nums.length; i++) {
-			int num = Math.abs(nums[i])-1;
+			int num = Math.abs(nums[i]) - 1;
 			
 			if(nums[num] > 0) {
 				nums[num] = -nums[num]; 
