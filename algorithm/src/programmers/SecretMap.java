@@ -95,8 +95,9 @@ public class SecretMap {
 //        }
 //
 //        for (int i = 0; i < n; i++) {
+//			// %[argument_index$][flags][width]conversion		
 //        	// %10S => 10칸에 맞춰서 오른쪽 정렬 String 타입 [수량보다 부족한 부분은 공백처리]
-//        	// s(문자열), d(정수), x(16진수), o(8진수), f(실수)
+//        	// conversions => (문자열), d(정수), x(16진수), o(8진수), f(실수)
 //            result[i] = String.format("%" + n + "s", result[i]);
 //            result[i] = result[i].replaceAll("1", "#");
 //            result[i] = result[i].replaceAll("0", " ");
