@@ -30,6 +30,8 @@ public class SumBetweenNum {
 	
 //	다른 문풀
 //	등차수열의 합 공식 이용
+//	1~n까지의 합 : n * (n+1) / 2
+//	k~n까지의 합 : (n+k) * (n-k+1) / 2
 //	public long solution(int a, int b) {
 //        return sumAtoB(Math.min(a, b), Math.max(b, a));
 //    }
@@ -40,8 +42,8 @@ public class SumBetweenNum {
 	
 	public static void main(String[] args) {
 		
-		int a = 3;
-		int b = 5;
+		int a = 5;
+		int b = 10;
 		System.out.println(solution(a, b));
 		
 	}
