@@ -32,7 +32,7 @@ public class FindPrimes {
 		return answer;
 		
 		
-//		다른 문풀
+//		다른 문풀 - 효율 불통
 //		int result = 0;
 //		for (int i = 2; i <= n; i++) {
 //			for (int j = 2; j <= i; j++) {
