@@ -3,6 +3,7 @@ package additional_study;
 import java.util.Arrays;
 
 //	삽입 정렬
+//	적은 개수일 때 효과적, 이미 정렬되어있는 배열에 새로운 요소를 삽일 할 경우 유용
 
 public class InsertionSort {
 
