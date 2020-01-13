@@ -1,4 +1,4 @@
-	package programmers;
+package programmers;
 	
 //	점심시간에 도둑이 들어, 일부 학생이 체육복을 도난당했습니다. 
 //	다행히 여벌 체육복이 있는 학생이 이들에게 체육복을 빌려주려 합니다. 
@@ -15,7 +15,7 @@
 //	체육복을 도난당한 학생의 수는 1명 이상 n명 이하이고 중복되는 번호는 없습니다.
 //	여벌의 체육복을 가져온 학생의 수는 1명 이상 n명 이하이고 중복되는 번호는 없습니다.
 //	여벌 체육복이 있는 학생만 다른 학생에게 체육복을 빌려줄 수 있습니다.
-//	여벌 체육복을 가져온 학생이 체육복을 도난당했을 수 있습니다. 
+//	***여벌 체육복을 가져온 학생이 체육복을 도난당했을 수 있습니다. 
 //	***이때 이 학생은 체육복을 하나만 도난당했다고 가정하며, 남은 체육복이 하나이기에 다른 학생에게는 체육복을 빌려줄 수 없습니다.
 //	
 //	입출력 예
@@ -60,25 +60,6 @@ public class WorkoutClothes {
 			}
 		}
         return answer;
-        
-        
-//        다른 문풀
-//        int answer = 0;
-//        answer = n;
-//
-//        for(int i = 0; i < lost.length; i++) {
-//            boolean rent = false;
-//            int j = 0;
-//            while(!rent) {
-//                if(j == reserve.length)                   break;
-//                if(lost[i] == reserve[j])                {reserve[j] = -1; rent=true;}
-//                else if(lost[i] - reserve[j] == 1 )      {reserve[j] = -1; rent=true;}
-//                else if(lost[i] - reserve[j] == -1)      {reserve[j] = -1; rent=true;}
-//                else                                     {j++;                      }
-//            }
-//            if(!rent) answer--;
-//        }
-//        return answer;
         
         
 //        다른 문풀
