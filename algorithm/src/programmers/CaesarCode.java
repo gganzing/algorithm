@@ -18,17 +18,17 @@ public class CaesarCode {
 		for(int i=0; i<s.length(); i++) {
 			char c = s.charAt(i);
 			char code = (char) (s.charAt(i) + n);
-			if((c >= 'a' && c <= 'z')) {
-				if(code > 'z') {
-					code -= 26;
-				}
-			}else if(c >= 'A' && c <= 'Z'){
-				if(code > 'Z') {
-					code -= 26;
-				}
+			
+			if(c >= 'a' && c <= 'z' && code > 'z') {
+				code -= 26;
+				
+			}else if(c >= 'A' && c <= 'Z' && code > 'Z'){
+				code -= 26;
+				
 			}else if(c == ' ') {
 				code = c;
 			}
+			
 			answer += code;
 		}
 		return answer;
