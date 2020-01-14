@@ -14,7 +14,6 @@ public class MaximumSubarray {
 	
 	public static int maxSubArray(int[] nums) {
 
-		// 내일 다시 확인하기
 		int max = nums[0];
 		for(int i=0; i<nums.length; i++) {
 			int sum = 0;
