@@ -1,4 +1,4 @@
-package leetcode_easy;
+package leetcode_medium;
 
 //	문자를 숫자로 변환하기
 //	숫자 + 문자의 경우 숫자까지만 숫자로 변환
