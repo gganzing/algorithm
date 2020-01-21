@@ -24,14 +24,17 @@ public class ExcelSheetColumnNumber {
 
 	public static int titleToNumber(String s) {
 		
-        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         
 		int col = 0;
 		int cnt = 0;
 		for(int i=s.length()-1; i>=0; i--) {
 			
-			char c = s.charAt(i);
-			col += (alphabet.indexOf(c)+1) * Math.pow(26, cnt++);
+//			char c = s.charAt(i);
+//			col += (alphabet.indexOf(c)+1) * Math.pow(26, cnt++);
+			
+			// A => 1 이니깐 +1 해주기
+			col += (s.charAt(i)+1 - 'A') * Math.pow(26, cnt++);
 			
 		}
 
@@ -49,10 +52,10 @@ public class ExcelSheetColumnNumber {
 	public static void main(String[] args) {
 		
 //		String s = "AA";
-		String s = "A";
+//		String s = "A";
 //		String s = "ZA";
 //		String s = "ZZ";
-//		String s = "AAA";
+		String s = "AAA";
 		
 		System.out.println(titleToNumber(s));
 		
