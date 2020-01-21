@@ -146,8 +146,9 @@ public class StringToInteger_Atoi {
             // 숫자가 아닌 글자가 나오면 그때까지 구해진 total값 가지고 탈출
             
             // overflow 확인
-            // 최종 int값 범위 안 한 자리수 전의 숫자까지의 합[나누기 10한 값을 비교]이  max값 범위를 벗어나는지 확인
-            // && => 더해지기 전의 마지막 숫자가 int범위 값의 마지막 자릿수보다 작은 값인지 확인
+            // 최종 int값 범위 안, 한 자리수 전의 숫자까지의 합[나누기 10한 값을 비교]이  max값 범위를 벗어나는지 확인
+            // 현재 인덱스의 값을 더하기 전에, 'Integer.MAX_VALUE / 10'을 toal과 비교 => 주어진 숫자가 int범위 값의 길이 이상이라는 상황이니깐
+            // 같을 경우에만 => 더해지기 전의 마지막 자리숫자가 int범위 값의 마지막 자릿수보다 작은 값인지 확인
             if(Integer.MAX_VALUE / 10 < total || Integer.MAX_VALUE / 10 == total && Integer.MAX_VALUE % 10 < digit)
                 return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             
@@ -165,6 +166,7 @@ public class StringToInteger_Atoi {
 //		String str = "words and 987";
 //		String str = "-91283472332";
 //		String str = "2147483648";
+		String str = "-2147483649";
 //		String str = "+1";
 //		String str = "+";
 //		String str = "";
@@ -174,7 +176,7 @@ public class StringToInteger_Atoi {
 //		String str = "20000000000000000000";
 //		String str = "9223372036854775808";
 //		String str = "  000000000001234567";
-		String str = "42";
+//		String str = "42";
 		System.out.println(myAtoi(str));
 		
 	}
